@@ -7,7 +7,10 @@ import React, { Component } from 'react';
 // import CommentList from './components/CommentList';
 // import Hoc from './components/Hoc';
 // import Componsition from './components/Componsition';
-import HookTest from './components/HookTest';
+// import HookTest from './components/HookTest';
+// import ContextTest from './components/ContextTest';
+// import WrappedNormalLoginForm from './components/AntdForm';
+import KFormCreate from './components/KForm';
 
 // function formatName(user) {
 //   return user.firstName + ' ' + user.lastName;
@@ -44,9 +47,20 @@ export default class App extends Component {
         {/* 高阶组件 */}
         {/* <Hoc></Hoc> */}
 
+        {/* 组件复合 */}
         {/* <Componsition></Componsition> */}
 
-        <HookTest></HookTest>
+        {/* Hook */}
+        {/* <HookTest></HookTest> */}
+
+        {/* Context */}
+        {/* <ContextTest></ContextTest> */}
+        
+        {/* AntdForm */}
+        {/* <WrappedNormalLoginForm /> */}
+
+        <KFormCreate />
+
       </div>
     )
   }
