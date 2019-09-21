@@ -5,12 +5,12 @@ import React, { Component } from 'react';
 // import CartSample from './components/CartSample';
 // import AntdTest from './components/AntdTest';
 // import CommentList from './components/CommentList';
-// import Hoc from './components/Hoc';
+import Hoc from './components/Hoc';
 // import Componsition from './components/Componsition';
 // import HookTest from './components/HookTest';
 // import ContextTest from './components/ContextTest';
 // import WrappedNormalLoginForm from './components/AntdForm';
-import KFormCreate from './components/KForm';
+// import KForm from './components/KForm';
 
 // function formatName(user) {
 //   return user.firstName + ' ' + user.lastName;
@@ -45,7 +45,7 @@ export default class App extends Component {
         {/* <CommentList></CommentList> */}
 
         {/* 高阶组件 */}
-        {/* <Hoc></Hoc> */}
+        <Hoc></Hoc>
 
         {/* 组件复合 */}
         {/* <Componsition></Componsition> */}
@@ -59,7 +59,7 @@ export default class App extends Component {
         {/* AntdForm */}
         {/* <WrappedNormalLoginForm /> */}
 
-        <KFormCreate />
+        {/* <KForm /> */}
 
       </div>
     )

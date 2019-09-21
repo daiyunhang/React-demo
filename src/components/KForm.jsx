@@ -38,7 +38,7 @@ function KFormCreate(Comp) {
     }
 }
 
-
+@KFormCreate
 class KForm extends Component {
     render() {
         const { getFieldDec } = this.props;
@@ -55,4 +55,4 @@ class KForm extends Component {
 
 
 
-export default KFormCreate(KForm);
+export default KForm;

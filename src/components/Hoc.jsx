@@ -24,9 +24,10 @@ const withLog = Comp =>{
     return props => <Comp {...props}/>
 }
 
-// @withLog
-// @withKaikeba
-// @withLog
+@withLog
+@withKaikeba
+@withLog
+
 class Kaikeba extends Component{
     render(){
         return (
@@ -35,13 +36,13 @@ class Kaikeba extends Component{
     }
 };
 
-const NewKaikeba = withLog(withKaikeba(withLog(Kaikeba)));
+// const NewKaikeba = withLog(withKaikeba(withLog(Kaikeba)));
 
 export default class Hoc extends Component {
     render() {
         return (
             <div>
-                <NewKaikeba stage="React" />
+                <Kaikeba stage="React" />
             </div>
         )
     }
