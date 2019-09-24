@@ -10,7 +10,12 @@ import React, { Component } from 'react';
 // import HookTest from './components/HookTest';
 // import ContextTest from './components/ContextTest';
 // import WrappedNormalLoginForm from './components/AntdForm';
-import KForm from './components/KForm';
+// import KForm from './components/KForm';
+import ReduxTest from './components/ReduxTest';
+import { Provider } from 'react-redux';
+import store from './store/index';
+import RouteSample from './components/RouteSample';
+
 
 // function formatName(user) {
 //   return user.firstName + ' ' + user.lastName;
@@ -55,12 +60,16 @@ export default class App extends Component {
 
         {/* Context */}
         {/* <ContextTest></ContextTest> */}
-        
+
         {/* AntdForm */}
         {/* <WrappedNormalLoginForm /> */}
 
-        <KForm />
-
+        {/* kForm */}
+        {/* <KForm /> */}
+        <Provider store={store}>
+          {/* <ReduxTest /> */}
+          <RouteSample />
+        </Provider>
       </div>
     )
   }
